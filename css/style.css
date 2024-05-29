@@ -1,0 +1,188 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #287265;
+    height: 110px;
+    margin: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 5px; /* Ajustement du padding */
+}
+
+ul li a {
+    color: #fff;
+    letter-spacing: 0rem;
+}
+
+ul li a:hover {
+    color: #ffd358;
+    text-decoration: underline;
+}
+
+
+/* Style pour le menu principal */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 15px; /* Ajustement du padding */
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style pour le sous-menu */
+.sousmenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.sousmenu li {
+    display: block;
+}
+
+.sousmenu li a {
+    padding: 10px 20px;
+    color: #000;
+}
+
+/* Affichage du sous-menu au survol */
+.menu li:hover .sousmenu {
+    display: block;
+}
+
+/* Style pour le sous-menu "MAQUETTE" */
+.menu-item .sousmenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 0; /* Ajout d'une marge pour séparer le menu principal du sous-menu */
+}
+
+.menu-item:hover .sousmenu {
+    display: block;
+}
+
+.menu-item .sousmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item .sousmenu li {
+    display: block;
+}
+
+.menu-item .sousmenu li a {
+    padding: 10px 20px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-item .sousmenu li a:hover {
+    background-color: #eee;
+}
+
+button {
+    color: #fff;
+    background-color: #287265;
+    text-align: center; 
+}
+
+#bouton1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    border-radius: 2px;
+    width: 50px;
+    right: 50px;
+}
+
+
+/* Style pour le formulaire */
+form[name="formEnseignant"] {
+    margin: 20px auto; /* Centrer le formulaire */
+    max-width: 400px; /* Largeur maximale du formulaire */
+    background-color: #f9f9f9; /* Couleur de fond du formulaire */
+    padding: 20px; /* Espacement interne du formulaire */
+    border-radius: 5px; /* Coins arrondis du formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+form[name="formEnseignant"] div {
+    margin-bottom: 15px; /* Espacement entre les éléments du formulaire */
+}
+
+form[name="formEnseignant"] label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Couleur du texte du label */
+}
+
+form[name="formEnseignant"] input[type="text"],
+form[name="formEnseignant"] input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    box-sizing: border-box; /* La largeur inclut le padding et la bordure */
+}
+
+form[name="formEnseignant"] button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #287265; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition en douceur pour le changement de couleur au survol */
+}
+
+form[name="formEnseignant"] button[type="submit"]:hover {
+    background-color: #1e5749; /* Nouvelle couleur de fond au survol */
+}
+
+
+/* Style pour le tableau */
+#tab-exemple {
+    width: 100%;
+    border-collapse: collapse; /* Fusionner les bordures des cellules */
+}
+
+#tab-exemple th,
+#tab-exemple td {
+    border: 1px solid #ccc; /* Bordure grise */
+    padding: 8px;
+    text-align: center; /* Centrer le texte */
+}
+
+#tab-exemple th {
+    background-color: #287265; /* Couleur de fond des cellules d'en-tête */
+    color: #fff; /* Couleur du texte des cellules d'en-tête */
+}
+
